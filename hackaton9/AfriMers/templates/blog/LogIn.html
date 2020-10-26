@@ -1,0 +1,49 @@
+{%extends "blog/base.html" %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="../../static/blog/LogIn.css? {% now 'U' %}">
+<div class="wrap">
+
+
+
+    <table class="loginform">
+        <th>
+            <td class="loginlabel">
+                  <label class="signup">Log In Account</label>
+            </td>
+            </th>
+        <tr>
+
+            <td class="email">
+                <label>E-mail</label>
+
+            </td>
+            <td>
+                <input type="text" placeholder="E-mail" class="input">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="passwd">
+                <label>Password</label>
+
+            </td>
+            <td>
+                <input type="password" placeholder="PassWord" class="input">
+            </td>
+
+        </tr>
+
+        <tr class="inputs">
+            <td></td>
+           <td class="btn">
+
+                <input type="submit" placeholder="Submit" class="button">
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+{% endblock content %}

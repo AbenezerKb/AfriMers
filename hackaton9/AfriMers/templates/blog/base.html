@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" type="text/css" href="../../static/blog/main.css? {% now 'U' %}">
+
+
+
+    <title>Title</title>
+</head>
+<header>
+  <h1 class="logo">Logo</h1>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/Groceries">Groceries</a></li>
+      <li><a href="#">Purchase And Delivery</a></li>
+      <li><a href="/account">Account</a></li>
+      <li><a href="#">About Us</a></li>
+
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+<body>
+<div >
+
+{% block content %}
+
+{% endblock content%}
+
+    </div>
+
+
+
+
+<footer>
+    <ul>
+
+
+            <li>
+            <div >
+                <h2>AfriMers</h2>
+                <p> A company based in Addis Abeba, Ethiopia that works to integrate African farmers with
+                    Customers directly with out any third party.</p>
+            </div>
+            </li>
+            <li>
+            <div >
+                <h2>CONTACT US</h2>
+                <div >
+                    <div >
+                    <div > <a href="#"><img id="icons" src="../../static/blog/icons/facebook.svg"> </a> </div>
+                    <div >  <a href="#"><img id="icons" src="../../static/blog/icons/instagram.svg"> </a> </div>
+                  <!--  <div class="col-sm-4 col-sm-4 col-sm-4"> <i class="fab fa-instagram-square"></i> </div> -->
+                     <div >   <a href="#"><img id="icons" src="../../static/blog/icons/twitter.svg"> </a> </div>
+                    </div>
+                </div>
+            </div>
+             </li>
+            <li>
+             <div >
+                <h2>OUR NEWSLETTER</h2>
+
+                 <p>Subscribe to our newsletter to get the latest news update to your email</p>
+               <form class="subscribe">
+
+
+                           <div >     <input type="text" class="subscribe"  placeholder="Input Your E-Mail Here" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                           </div>
+
+                           <div >     <button type="button" class="subscribe"  >Submit</button>
+                           </div>
+
+                            <!-- </div>
+                        </div>
+                            -->
+
+
+                    </form>
+
+             </div>
+            </li>
+
+
+
+    </ul>
+</footer>
+
+</body>
+</html>

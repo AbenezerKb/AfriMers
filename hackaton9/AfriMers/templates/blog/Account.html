@@ -1,0 +1,103 @@
+
+{%extends "blog/base.html" %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="../../static/blog/account.css? {% now 'U' %}">
+<div></div>
+<table class="wrap">
+    <tr>
+        <td>
+<img src="../../static/blog/img/vector.svg" class="bgimg" >
+            </td>
+        <td>
+<form class="form">
+
+    <table  class="reg">
+        <tr>
+   <td>
+       <label >Full Name</label>
+
+   </td>
+          <td>
+               <input type="text" class="name input" placeholder="Full Name">
+          </td>
+        </tr>
+
+        <tr>
+   <td>
+       <label >E-mail</label>
+
+   </td>
+
+            <td>
+                 <input type="email" class="email input" placeholder="E-mail">
+
+            </td>
+         </tr>
+
+        <tr>
+   <td>
+       <label >Country</label>
+
+   </td>
+<td>
+    <input type="text"  class="country input" placeholder="Country">
+</td>
+            </tr>
+
+        <tr>
+   <td>
+       <label >City</label>
+
+   </td>
+<td>
+    <input type="text"  class="city input" placeholder="City">
+</td>
+         </tr>
+
+        <tr>
+   <td>
+       <label >Phone Number</label>
+
+   </td>
+
+            <td>
+
+                <input type="tel"  class="phone input" placeholder="Phone Number">
+            </td>
+
+            </tr>
+
+        <tr>
+   <td>
+       <label >Password</label>
+
+   </td>
+    <td>
+        <input type="password" class="passwd input" placeholder="Password">
+    </td>
+            </tr>
+
+        <tr>
+    <td>
+        <label >Confirm Password</label>
+
+    </td>
+            <td>
+                <input type="password" class="Cpasswd input" placeholder="Confirm Password">
+            </td>
+</tr>
+    <tr>
+<td></td>
+<td>
+    <input type="submit" class="submit input" placeholder="Submit">
+        </td>
+    </tr>
+</table>
+
+</form>
+    </td>
+    </tr>
+</table>
+
+{% endblock content %}
